@@ -6,6 +6,7 @@ class HomeController extends Controller
 {
     public function show()
     {
+        session()->put('githubData', 1);
         return view('home');
     }
 

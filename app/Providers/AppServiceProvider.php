@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Horizon;
 use App\Models\Thread;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Relations\Relation;
 
@@ -14,6 +15,7 @@ class AppServiceProvider extends ServiceProvider
         $this->bootEloquentMorphs();
         $this->bootMacros();
         $this->bootHorizon();
+        Schema::defaultStringLength(151);
     }
 
     private function bootEloquentMorphs()

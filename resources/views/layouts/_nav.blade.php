@@ -7,35 +7,35 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ route('home') }}">Laravel.io</a>
+            <a class="navbar-brand" href="{{ route('home') }}">IFasting</a>
         </div>
 
         <div class="collapse navbar-collapse" id="main-navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="{{ active(['forum', 'threads*', 'thread']) }}"><a href="{{ route('forum') }}">Forum</a></li>
-                <li><a href="https://paste.laravel.io">Pastebin</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chat <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://discord.gg/KxwQuKb">Discord</a></li>
-                        <li><a href="https://larachat.co/">Larachat</a></li>
-                        <li><a href="https://webchat.freenode.net/?nick=laravelnewbie&channels=%23laravel&prompt=1">IRC</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://laravelevents.com">Events</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://github.com/laravelio"><i class="fa fa-github"></i> Github</a></li>
-                        <li><a href="https://twitter.com/laravelio"><i class="fa fa-twitter"></i> Twitter</a></li>
-                        <li><a href="https://medium.com/laravelio"><i class="fa fa-medium"></i> Medium</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="https://laravel.com">Laravel</a></li>
-                        <li><a href="https://laracasts.com">Laracasts</a></li>
-                        <li><a href="https://laravel-news.com">Laravel News</a></li>
-                        <li><a href="http://www.laravelpodcast.com">Podcast</a></li>
-                    </ul>
-                </li>
+                <li><a href="#">Events</a></li>
+                {{--<li class="dropdown">--}}
+                    {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chat <span class="caret"></span></a>--}}
+                    {{--<ul class="dropdown-menu">--}}
+                        {{--<li><a href="https://discord.gg/KxwQuKb">Discord</a></li>--}}
+                        {{--<li><a href="https://larachat.co/">Larachat</a></li>--}}
+                        {{--<li><a href="https://webchat.freenode.net/?nick=laravelnewbie&channels=%23laravel&prompt=1">IRC</a></li>--}}
+                    {{--</ul>--}}
+                {{--</li>--}}
+                <li><a href="#">Contact</a></li>
+                {{--<li class="dropdown">--}}
+                    {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>--}}
+                    {{--<ul class="dropdown-menu">--}}
+                        {{--<li><a href="https://github.com/laravelio"><i class="fa fa-github"></i> Github</a></li>--}}
+                        {{--<li><a href="https://twitter.com/laravelio"><i class="fa fa-twitter"></i> Twitter</a></li>--}}
+                        {{--<li><a href="https://medium.com/laravelio"><i class="fa fa-medium"></i> Medium</a></li>--}}
+                        {{--<li role="separator" class="divider"></li>--}}
+                        {{--<li><a href="https://laravel.com">Laravel</a></li>--}}
+                        {{--<li><a href="https://laracasts.com">Laracasts</a></li>--}}
+                        {{--<li><a href="https://laravel-news.com">Laravel News</a></li>--}}
+                        {{--<li><a href="http://www.laravelpodcast.com">Podcast</a></li>--}}
+                    {{--</ul>--}}
+                {{--</li>--}}
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 @if (Auth::guest())

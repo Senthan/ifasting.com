@@ -34,7 +34,7 @@ final class RegisterUser
      */
     private $githubUsername;
 
-    public function __construct(string $name, string $email, string $username, string $githubId, string $githubUsername)
+    public function __construct(string $name, string $email, string $username, string $githubId = null, string $githubUsername = null)
     {
         $this->name = $name;
         $this->email = $email;
@@ -49,8 +49,8 @@ final class RegisterUser
             $request->name(),
             $request->emailAddress(),
             $request->username(),
-            $request->githubId(),
-            $request->githubUsername()
+            null,
+            null
         );
     }
 
@@ -63,8 +63,8 @@ final class RegisterUser
             'name' => $this->name,
             'email' => $this->email,
             'username' => strtolower($this->username),
-            'github_id' => $this->githubId,
-            'github_username' => $this->githubUsername,
+            'github_id' => null,
+            'github_username' => null,
             'confirmation_code' => str_random(60),
             'type' => User::DEFAULT,
             'remember_token' => '',

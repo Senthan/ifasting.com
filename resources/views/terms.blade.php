@@ -6,9 +6,9 @@
 
     <h1>Terms and Conditions</h1>
 
-    <p><strong>Last updated: May 22, 2018</strong></p>
+    <p><strong>Last updated: May 1, 2019</strong></p>
 
-    <p>These Terms and Conditions ("Terms", "Terms and Conditions") govern your relationship with https://laravel.io website (the "Service") operated by Laravel.io ("us", "we", or "our").</p>
+    <p>These Terms and Conditions ("Terms", "Terms and Conditions") govern your relationship with https://ifasting.com website (the "Service") operated by IFasting.com ("us", "we", or "our").</p>
 
     <p>Please read these Terms and Conditions carefully before using the Service.</p>
 

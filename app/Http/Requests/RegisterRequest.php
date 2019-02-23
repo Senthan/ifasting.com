@@ -18,8 +18,7 @@ class RegisterRequest extends FormRequest
             'email' => 'required|email|max:255|unique:users',
             'username' => 'required|max:40|unique:users',
             'rules' => 'accepted',
-            'terms' => 'accepted',
-            'github_id' => 'required',
+            'terms' => 'accepted'
         ];
     }
 
@@ -38,13 +37,13 @@ class RegisterRequest extends FormRequest
         return $this->get('username');
     }
 
-    public function githubId(): string
-    {
-        return $this->get('github_id');
-    }
+//    public function githubId(): string
+//    {
+//        return $this->get('github_id');
+//    }
 
-    public function githubUsername(): string
-    {
-        return $this->get('github_username', '');
-    }
+//    public function githubUsername(): string
+//    {
+//        return $this->get('github_username', '');
+//    }
 }

@@ -80,8 +80,8 @@ final class User extends Authenticatable
     {
         $hash = md5(strtolower(trim($this->email)));
         $default = urlencode(route('avatar', ['username' => $this->username()]));
-
-        return "https://www.gravatar.com/avatar/$hash?s=$size&d=$default";
+        return asset('images/img-default.png');
+//        return "https://www.gravatar.com/avatar/$hash?s=$size&d=$default";
     }
 
     public function intercomHash(): string
