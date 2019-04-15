@@ -22,7 +22,7 @@ final class EmailConfirmationEmail extends Mailable
 
     public function build()
     {
-        return $this->subject('Confirm your Laravel.io email address')
+        return $this->subject('Confirm your IFasting.org email address')
             ->markdown('emails.email_confirmation');
     }
 }
