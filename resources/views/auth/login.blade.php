@@ -24,9 +24,9 @@
         </div>
 
         {!! Form::submit('Login', ['class' => 'btn btn-primary btn-block']) !!}
-        <a href="{{ route('login.github') }}" class="btn btn-default btn-block">
-            <i class="fa fa-github"></i> Github
-        </a>
+        {{--<a href="{{ route('login.github') }}" class="btn btn-default btn-block">--}}
+            {{--<i class="fa fa-github"></i> Github--}}
+        {{--</a>--}}
     {!! Form::close() !!}
 @endsection
 
